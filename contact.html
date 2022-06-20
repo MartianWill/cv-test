@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <p>email : will@gmail.com</p>
+        <p>tel : 998776865</p>
+    </ul>
+    <hr>
+    <p>Using Form</p>
+    <hr>
+    <form action="index.html" method="post">
+        <label for="Name">Enter Your Name</label>
+        <input type="text" name="name">
+        <input type="submit" name="cli">
+        <!--adding in this form results in following right after submit 
+            <label for="something"><input type="radio" value="pick">pick me up</label> -->
+        <br>
+        <input type="file">
+        </form>
+    <!-- adding a new form results in adding under abovve form -->
+    <!-- **NEW** dont have to add new form just give a line break
+    everything can be add in one form -->
+    <form>
+        <label for="something"><input type="radio" value="pick" name="pick">pick him up</label>
+        <label for="something"><input type="radio" value="pick" name="pick">pick me up</label>
+    </form>
+        <form action="index.html">
+        <legend>Select Name</legend>
+        <label for="Name select"><input type="range" name="" id="">will</label>
+    </form>
+    <hr>
+    <form action="index.html" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name"><br>
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id=""><br>
+        <label for="message">Your Message: </label><br>
+        <textarea name="message" id="" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+</body>
+</html>
